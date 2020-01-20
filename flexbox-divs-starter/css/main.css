@@ -97,20 +97,32 @@ textarea {
 
 
 html {
-  background-color: #fff;
+  background-color: #2A3E7E;
   height: 100%;
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'cav-dreams';
   padding: 2em;
   font-size: 1.25em;
   height: 100%;
 }
 
+@font-face {
+  font-family: 'cav-dreams';
+  src: url(../fonts/caviar-dreams.ttf);
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'cav-dreams-bold';
+  src: url(../fonts/caviar-dreams-bold.ttf);
+  font-style: normal;
+}
+
 .wrapper {
   /*add display:flex and set justify-content to space-between*/
-  font-weight: 700;
+  font-weight: 400;
   display: flex;
   justify-content: space-between;
 }
@@ -121,15 +133,24 @@ body {
   color: #fff;
   display: flex;
   line-height: 1.5em;
-  font-size: 1.6em;
-  background-color: #f16059;
-  height: 300px;
+  font-size: 1em;
+  background-color: #2A3E7E;
+  height: auto;
   justify-content: center;
+  padding: 1.25em;
   width: 30%;
 
 }
 
+.div-2 {
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
 
+span {
+  font-family: 'cav-dreams-bold';
+  font-size: 1.1em;
+}
 
 
 /* ==========================================================================
