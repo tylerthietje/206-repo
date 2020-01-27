@@ -97,15 +97,23 @@ textarea {
 
 
 html {
-  background-color: #2A3E7E;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+20,2989d8+50,1e5799+80&0+0,0.8+15,1+19,1+81,0.8+85,0+100;Blue+Two+Sided+Transparent */
+  background: -moz-radial-gradient(center, ellipse cover,  rgba(30,87,153,0) 0%, rgba(30,87,153,0.8) 15%, rgba(30,87,153,1) 19%, rgba(30,87,153,1) 20%, rgba(41,137,216,1) 50%, rgba(30,87,153,1) 80%, rgba(30,87,153,1) 81%, rgba(30,87,153,0.8) 85%, rgba(30,87,153,0) 100%); /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover,  rgba(30,87,153,0) 0%,rgba(30,87,153,0.8) 15%,rgba(30,87,153,1) 19%,rgba(30,87,153,1) 20%,rgba(41,137,216,1) 50%,rgba(30,87,153,1) 80%,rgba(30,87,153,1) 81%,rgba(30,87,153,0.8) 85%,rgba(30,87,153,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center,  rgba(30,87,153,0) 0%,rgba(30,87,153,0.8) 15%,rgba(30,87,153,1) 19%,rgba(30,87,153,1) 20%,rgba(41,137,216,1) 50%,rgba(30,87,153,1) 80%,rgba(30,87,153,1) 81%,rgba(30,87,153,0.8) 85%,rgba(30,87,153,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#001e5799',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background-color: orange;
+  width: 100%;
   height: 100%;
 }
 
 body {
   font-family: 'cav-dreams';
+  color: white;
   padding: 2em;
   font-size: 1.25em;
-  height: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 @font-face {
@@ -120,37 +128,74 @@ body {
   font-style: normal;
 }
 
-.wrapper {
-  /*add display:flex and set justify-content to space-between*/
-  font-weight: 400;
-  display: flex;
-  justify-content: space-between;
-}
-
-.div-1, .div-2, .div-3 {
+.flex-container {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
-  align-items: center;
-  color: #fff;
   display: flex;
-  line-height: 1.5em;
-  font-size: 1em;
-  background-color: #2A3E7E;
-  height: auto;
-  justify-content: center;
-  padding: 1.25em;
-  width: 30%;
-
+  flex-flow: row wrap;
+  justify-content: space-between;
+  max-width: 1200px;
 }
 
-.div-2 {
-  border-left: 1px solid white;
-  border-right: 1px solid white;
+header, footer {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+}
+
+footer {
+    border-top: 1px solid #fff;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border-bottom: 1px solid #fff;
+}
+
+main p {
+  font-size: 1.35em;
+}
+
+span.main {
+  font-family: 'cav-dreams-bold';
+  font-size: 1.1em;
 }
 
 span {
   font-family: 'cav-dreams-bold';
-  font-size: 1.1em;
+  font-size: 1.4rem;
 }
+
+.flex-columns {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.flex-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.4em;
+  font-size: 1em;
+  flex-basis: 350px;
+  }
+
+#div-1 {
+  padding: 0;
+}
+
+#div-2 {
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+
+
+
 
 
 /* ==========================================================================
