@@ -5,7 +5,6 @@
 
 html{
 	font-size: 16px;
-	flex-flow: row wrap;
 }
 
 body {
@@ -18,10 +17,12 @@ body {
 
 .container{
 	max-width: 1200px;
+	flex-basis: 90%;
 	margin: 0 auto;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-flow: row wrap;
 }
 
 h1,
@@ -53,37 +54,42 @@ p {
 
 /*The widths are in a percentage!*/
 header {
-	height: 110px;
 	border-bottom: 3px solid #77a466;
 	margin: 0 auto;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-basis: 100%;
+	flex-direction: column;
 }
 
 header h1 {
-	float: left;
 	margin: 0;
 	padding: 38px 0;
+	flex-basis: 100%;
 }
 header h1 span {
 	color: #77a466;
 }
 
 header nav {
-	float: right;
-	padding: 46px 0;
+	padding: 0px 0;
 }
 header nav ul {
 	margin: 0;
-	padding: 0;
+	padding: 0 0 38px 0;
+	display: flex;
+	flex-flow: column;
+	flex-basis: 100%;
+	
 }
 header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: .875em;
-	padding: 0 10px;
-	display: inline;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
 }
 header nav ul li a{
 	text-decoration: none;
@@ -94,15 +100,15 @@ header nav ul li a{
 .top-section,
 .bottom-section {
 	margin: 0 auto;
-	/*clear: both; */
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-flow: row wrap;
+
 }
 
 .main-image {
-	height: auto;
-	/*float: left;*/
+	
 }
 .main-image img {
 	width: 100%;
@@ -127,10 +133,10 @@ header nav ul li a{
 .section-one,
 .section-two,
 .section-three {
-	width: 33%;
-	height: auto;
+	width: 90%;
 	float: left;
 	border-top: 1px solid #eee;
+	flex-flow: row wrap;
 }
 
 .section-one h4 {
@@ -177,10 +183,56 @@ footer {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-basis: 100%;
 }
 footer span {
 	font-family: 'Wisdom Script', cursive;
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: .875em;
+}
+
+@media all and (min-width: 768px) {
+	/* Tablet Styles Here */
+	.bottom-section {
+		margin: 0 auto;
+		/*clear: both; */
+		display: flex;
+		align-items: start	;
+		justify-content: center;
+    }
+
+	.section-one,
+	.section-two,
+	.section-three {
+		width: 33%;
+		height: auto;
+		float: left;
+		border-top: 1px solid #eee;
+	}
+
+	header {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row;
+	}
+
+	header nav ul {
+		margin: 0;
+		padding: 38px 0;
+		display: flex;
+		flex-flow: row;
+		flex-basis: 100%;
+	
+}
+
+}
+
+@media all and (min-width: 1200px) {
+	/* Desktop Styles Here */
+	header {
+		display: flex;
+		justify-content: space-between;
+	}
+
 }
