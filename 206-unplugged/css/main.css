@@ -281,11 +281,18 @@ p.features-item-description {
   width: 48%;
 }
 
-/* ==========================================================================
+/* --------------------------------------------------------------------------
    About Page
-   ========================================================================== */
+   -------------------------------------------------------------------------- */
 
 .mission {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap; 
+}
+
+.mission-content {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -301,9 +308,9 @@ p.features-item-description {
 
 
 
-/* ==========================================================================
+/* --------------------------------------------------------------------------
    FAQ Page
-   ========================================================================== */
+   -------------------------------------------------------------------------- */
 
 .faq {
   display: flex;
@@ -312,11 +319,18 @@ p.features-item-description {
   flex-flow: row wrap;
 }
 
-.faq-content-wrapper {
+.faq-content {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap; 
+}
+
+.faq .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 
@@ -410,8 +424,135 @@ p.features-item-description {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /* --------------------------------------------------------------------------
+   Home Page
+   -------------------------------------------------------------------------- */
+
+  .content-wrapper {
+    max-width: 640px;
+    margin: 100px 0;
+  }
+
+  header .content-wrapper {
+    justify-content: space-between;    
+    flex-basis: 100%;
+    
+  }
+
+  .header-divider {
+    display: none;
+  }
+
+  header nav {
+    width: 30%;
+  } 
+
+  header nav ul {
+    justify-content: space-between;   
+  }
+
+  aside .content-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+  }
+
+  aside .form-description {
+    flex-basis: 34%;
+  }
+
+  aside .form {
+    flex-basis: 34%;
+  }
+
+  .features {
+    flex-basis: 84%;
+    padding: 0 50px;
+  }
+  
+  .features article {
+    flex-basis: 42%;
+  }
+
+  .features-items {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap ;
+  }
+
+  p.features-item-description {
+    padding: 40px 20px;
+  }
+
+  .reviews {
+    display: flex;
+    justify-content: center;
+    padding: 50px 50px;
+  }
+
+  .reviews article {
+    display: flex;
+    justify-content: center;
+    flex-basis: 42%;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    padding: 75px 0;
+  }
+
+  /* --------------------------------------------------------------------------
+   About Page
+   -------------------------------------------------------------------------- */
+
+  .mission-content {
+    display: flex;
+    justify-content: space-between;    
+    align-items: center;
+  }
+
+  .mission-content p {
+    width: 45%;
+    }
+
+  .contact-section .content-wrapper h2 {
+    width: 620px;  
+  }
+
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+
+
+  /* --------------------------------------------------------------------------
+   FAQ Page
+   -------------------------------------------------------------------------- */
+  
+  .faq .content-wrapper {
+        justify-content: space-between;
+    }
+    
+    .faq-content {
+        flex-basis: 40%;
+    }
+ 
+    .faq h2 {
+        width: 100%;
+    }
+
+}
+
+
+
+@media only screen and (min-width: 1200px) {
+  /* Desktop Styles here */
 }
 
 @media print,
