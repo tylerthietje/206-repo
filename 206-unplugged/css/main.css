@@ -98,6 +98,71 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* General Styles */
+ 
+html {
+  font-size: 16px;
+}
+ 
+body {
+ font-family: 'Open Sans', sans-serif;
+ font-size: 1em;
+}
+ 
+ul, 
+ol {
+ font-family: 'Open Sans', sans-serif;
+ font-size: 1.125em;
+ text-transform: uppercase;
+}
+ 
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+ font-size: 3.75em;
+}
+ 
+h2 {
+ font-family: 'Poppins', sans-serif;
+ font-size: 2.25em;
+}
+ 
+h3, 
+h4 {
+ font-family: 'Poppins', sans-serif;
+ font-size: 1.875em;
+}
+
+h4 {
+  font-size: 1.125em;
+}
+ 
+p {
+  font-size: 1.125em;
+}
+ 
+img {
+ 
+}
+ 
+figure {
+ 
+}
+ 
+address {
+ font-family: 'Open Sans', sans-serif;
+ font-size: 1.125em;
+ font-style: normal;
+}
+
+.content-wrapper {
+
+}
+
 /*---------------Base Header - Footer Styles -------------*/
 
 header,
@@ -335,7 +400,7 @@ p.features-item-description {
 }
 
 .faq-content h4 {
-  margin: 20px 0 0 0;
+  margin: 20px 0 10px 0;
 }
 
 .faq-content p {
@@ -438,123 +503,123 @@ p.features-item-description {
    Home Page
    -------------------------------------------------------------------------- */
 
-  .content-wrapper {
-    max-width: 640px;
-    margin: 100px 0;
-  }
+.content-wrapper {
+  max-width: 640px;
+  margin: 100px 0;
+}
 
-  header .content-wrapper {
-    justify-content: space-between;    
-    flex-basis: 100%;
-    
-  }
-
-  .header-divider {
-    display: none;
-  }
-
-  header nav {
-    width: 30%;
-  } 
-
-  header nav ul {
-    justify-content: space-between;   
-  }
-
-  aside .content-wrapper {
-    display: flex;
-    justify-content: space-around;
-    flex-flow: row wrap;
-  }
-
-  aside .form-description {
-    flex-basis: 34%;
-  }
-
-  aside .form {
-    flex-basis: 34%;
-  }
-
-  .features {
-    flex-basis: 84%;
-    padding: 0 50px;
-  }
+header .content-wrapper {
+  justify-content: space-between;    
+  flex-basis: 100%;
   
-  .features article {
-    flex-basis: 42%;
-  }
+}
 
-  .features-items {
-    display: flex;
-    justify-content: space-around;
-    flex-flow: row wrap ;
-  }
+.header-divider {
+  display: none;
+}
 
-  p.features-item-description {
-    padding: 40px 20px;
-  }
+header nav {
+  width: 30%;
+} 
 
-  .reviews {
-    display: flex;
-    justify-content: center;
-    padding: 50px 50px;
-  }
+header nav ul {
+  justify-content: space-between;   
+}
 
-  .reviews article {
-    display: flex;
-    justify-content: center;
-    flex-basis: 42%;
-  }
+aside .content-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
 
-  .footer-content {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-flow: row wrap;
-    padding: 75px 0;
-  }
+aside .form-description {
+  flex-basis: 34%;
+}
 
-  /* --------------------------------------------------------------------------
-   About Page
-   -------------------------------------------------------------------------- */
+aside .form {
+  flex-basis: 34%;
+}
 
-  .mission-content {
-    display: flex;
-    justify-content: space-between;    
-    align-items: center;
-  }
-
-  .mission-content p {
-    width: 45%;
-    }
-
-  .contact-section .content-wrapper h2 {
-    width: 620px;  
-  }
-
-  .contact-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-
-
-
-  /* --------------------------------------------------------------------------
-   FAQ Page
-   -------------------------------------------------------------------------- */
+.features {
+  flex-basis: 84%;
+  padding: 0 50px;
+}
   
-  .faq .content-wrapper {
-        justify-content: space-between;
-    }
-    
-    .faq-content {
-        flex-basis: 40%;
-    }
- 
-    .faq h2 {
-        width: 100%;
-    }
+.features article {
+  flex-basis: 42%;
+}
+
+.features-items {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap ;
+}
+
+p.features-item-description {
+  padding: 40px 20px;
+}
+
+.reviews {
+  display: flex;
+  justify-content: center;
+  padding: 50px 50px;
+}
+
+.reviews article {
+  display: flex;
+  justify-content: center;
+  flex-basis: 42%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  padding: 75px 0;
+}
+
+/* --------------------------------------------------------------------------
+ About Page
+ -------------------------------------------------------------------------- */
+
+.mission-content {
+  display: flex;
+  justify-content: space-between;    
+  align-items: center;
+}
+
+.mission-content p {
+  width: 45%;
+}
+
+.contact-section .content-wrapper h2 {
+  width: 620px;  
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+
+
+/* --------------------------------------------------------------------------
+ FAQ Page
+ -------------------------------------------------------------------------- */
+
+.faq .content-wrapper {
+  justify-content: space-between;
+}
+  
+.faq-content {
+  flex-basis: 40%;
+}
+
+.faq h2 {
+  width: 100%;
+}
 
 }
 
@@ -570,7 +635,12 @@ p.features-item-description {
 
 /* Hero*/
 .hero-area h1 {
-  width: 57%; 
+  width: 80%; 
+  justify-content: flex-start;
+}
+
+.hero-area {
+  
 }
 
 /* Aside*/
@@ -585,7 +655,7 @@ aside .content-wrapper .form {
 
 /* Features*/
 .features h2 {
-  width: 74%;
+  width: 85%;
 }
 
 .features article {
