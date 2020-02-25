@@ -98,7 +98,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/* General Styles */
+/* Global Styles */
  
 html {
   font-size: 16px;
@@ -107,6 +107,16 @@ html {
 body {
  font-family: 'Open Sans', sans-serif;
  font-size: 1em;
+ color: #e2e3ed;
+ text-align: left;
+}
+
+img {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
 }
  
 ul, 
@@ -121,20 +131,18 @@ a {
   text-decoration: none;
 }
 
-h1 {
-  font-family: 'Poppins', sans-serif;
- font-size: 3.75em;
-}
- 
 h2 {
  font-family: 'Poppins', sans-serif;
- font-size: 2.25em;
+ font-size: 1.875em;
+ font-weight: 500;
 }
  
 h3, 
 h4 {
  font-family: 'Poppins', sans-serif;
- font-size: 1.875em;
+ font-size: 1.125em;
+ font-weight: 500;
+ margin: 20px 0 15px 0;
 }
 
 h4 {
@@ -142,7 +150,8 @@ h4 {
 }
  
 p {
-  font-size: 1.125em;
+  font-size: .875em;
+  line-height: 1.25;
 }
  
 img {
@@ -160,7 +169,7 @@ address {
 }
 
 .content-wrapper {
-
+  width: 90%;
 }
 
 /*---------------Base Header - Footer Styles -------------*/
@@ -275,9 +284,18 @@ footer h3 {
 .hero-area {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-flow: row wrap;
-  padding: 0 20px;
+  background: url(../img/hero-image.jpg) center no-repeat;
+  background-size: cover;
+  color: #e2e3ed;
+  min-height: 500px;
+}
+
+.hero-area h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.25em;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 aside {
@@ -294,15 +312,18 @@ aside .content-wrapper {
   margin: 0 0 50px 0;
 }
 
-aside h2 {
-
+aside h3 {
+  font-size: 1.125em;
+  font-weight: 500;
 }
 
 aside p {
-
+  font-size: .875em;
+  line-height: 1.25;
 }
 
 aside .form {
+  margin: 30px 0 50px 0;  
 }
  
 input[type=text] {
@@ -328,10 +349,13 @@ input[type=button] {
 }
 
 .features {
+  background: url(../img/features-image.jpg) center no-repeat;
+  background-size: cover;  
   display: flex;
   justify-content: center;
   flex-flow: row wrap ;
-  padding: 50px 20px 0 20px;
+  padding: 50px 0;
+  min-height: 1450px;
 }
 
 .features article {
@@ -345,6 +369,7 @@ input[type=button] {
 }
 
 p.features-item-description {
+  font-size: .875em;
   text-align: center;
   margin: 0;
   padding: 40px 0;
@@ -352,19 +377,28 @@ p.features-item-description {
 
 .reviews {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   flex-flow: row wrap;
-  padding: 0 20px;
   background-color: #2a423a;
   color: #e2e3ed;
+  padding: 50px 0 30px 0;
 }
 
 .reviews h2 {
-  margin: 0;
+  margin: 0 0 30px 0;
+  line-height: 1;
 }
 
 .reviews h3 {
-  width: 48%;
+  margin: 20px 0;
+}
+
+.reviews figure {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 /* --------------------------------------------------------------------------
@@ -562,6 +596,16 @@ header ul li {
   padding: 37.5px 0;
 }
 
+.hero-area {
+  min-height: 600px;
+}
+
+.hero-area h1 {
+  font-size: 3em;
+  line-height: 1;
+  margin: 0;
+}
+
 aside .content-wrapper {
   display: flex;
   justify-content: space-between;
@@ -603,16 +647,36 @@ p.features-item-description {
   padding: 40px 20px;
 }
 
+/* Reviews */
 .reviews {
-  display: flex;
-  justify-content: center;
-  padding: 50px 50px;
+
+}
+
+.reviews h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+  width: 78%;
+  margin: 0 0 10 0px;
+}
+
+.reviews h3 {
+  font-size: 1.5em;
+  font-weight: 500;
+  margin: 0;
 }
 
 .reviews article {
   display: flex;
-  justify-content: center;
-  flex-basis: 42%;
+  justify-content: space-between;
+}
+
+.reviews .reviews-text {
+  width: 48%;
+  align-items: flex-start;
+}
+
+.reviews figure {
+  width: 48%;
 }
 
 .footer-content {
@@ -679,18 +743,23 @@ p.features-item-description {
 }
 
 /* Hero*/
-.hero-area h1 {
-  width: 80%; 
-  justify-content: flex-start;
+.hero-area .content-wrapper {
+  margin: 0;
 }
 
 .hero-area {
-  
+  min-height: 775px;
+}
+
+.hero-area h1 {
+  font-size: 3.75em;
+  width: 80%; 
+  margin-top: 50px;
 }
 
 /* Aside*/
 aside .content-wrapper {
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 aside .content-wrapper .form-description,
@@ -700,7 +769,7 @@ aside .content-wrapper .form {
 
 /* Features*/
 .features h2 {
-  width: 85%;
+  width: 70%;
 }
 
 .features article {
@@ -708,11 +777,19 @@ aside .content-wrapper .form {
 }
 
 /* Reviews*/
-.reviews article div {
-  width: 79%;
+.reviews {
+  padding-bottom: 100px;
 }
 
+.reviews h3 {
+  font-size: 1.875em;
+  font-weight: 500;
+}
 
+.reviews h2 {
+  padding: 100px 0;
+  font-weight: 500;
+}
 
 /* --------------------------------------------------------------------------
    About Page
