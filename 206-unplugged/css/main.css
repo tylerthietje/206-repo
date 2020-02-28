@@ -370,11 +370,22 @@ input[type=button] {
   flex-flow: row wrap ;
 }
 
+.features i {
+  font-size: 3.75em;
+  display: flex;
+  justify-content: center;
+  margin: 65px 0 0 0;
+}
+
+p.fontawesome-icon {
+  margin: 0;
+}
+
 p.features-item-description {
   font-size: .875em;
   text-align: center;
   margin: 0;
-  padding: 40px 0;
+  padding: 40px 0 0 0;
 }
 
 .reviews {
@@ -588,7 +599,7 @@ p.features-item-description {
 
 .content-wrapper {
   max-width: 640px;
-  margin: 100px 0;
+  margin: 75px 0;
 }
 
 h2 {
@@ -660,8 +671,7 @@ aside p {
 
 
 .features {
-  flex-basis: 84%;
-  padding: 0 50px;
+  min-height: 850px;
 }
   
 .features article {
@@ -824,11 +834,17 @@ aside .content-wrapper .form {
 
 /* Features*/
 .features h2 {
-  width: 70%;
+  width: 100%;
 }
 
+.features-items {
+  flex-basis: 80%;
+}
+
+
+
 .features article {
-  flex-basis: 33%;
+  flex-basis: 30%;
 }
 
 /* Reviews*/
